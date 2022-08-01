@@ -2,8 +2,8 @@
 Terraform code for deploying Aviatrix microsegmantation demo environment.
 The resulting topology is a transit in Azure with two spokes and three VMs. 
 
-The VMs belong to the following applications based on CSP tags applied:
-Business App 1: VM1, VM3
+The VMs belong to the following applications based on CSP tags applied:  
+Business App 1: VM1, VM3  
 Business App 2 VM2
 
 The policy applied allows communication within each application domain freely, but only allows ping between application 1 and application 2. All VMs have apache server installed however curl will only work withn the application domains, but not between them.
