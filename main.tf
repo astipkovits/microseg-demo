@@ -6,7 +6,7 @@ locals {
 #Create Azure Transit
 module "azure_transit_1" {
   source  = "terraform-aviatrix-modules/mc-transit/aviatrix"
-  version = "2.1.5"
+  version = "2.2.0"
 
   cloud                         = "Azure"
   name                          = "${local.env_name}-tr1"
@@ -20,7 +20,7 @@ module "azure_transit_1" {
 #Create Azure Spoke1
 module "spoke_azure_1" {
   source  = "terraform-aviatrix-modules/mc-spoke/aviatrix"
-  version = "1.2.4"
+  version = "1.3.0"
 
   cloud         = "Azure"
   name          = "${local.env_name}-spk1"
@@ -35,7 +35,7 @@ module "spoke_azure_1" {
 #Create Azure Spoke2
 module "spoke_azure_2" {
   source  = "terraform-aviatrix-modules/mc-spoke/aviatrix"
-  version = "1.2.4"
+  version = "1.3.0"
 
   cloud         = "Azure"
   name          = "${local.env_name}-spk2"
