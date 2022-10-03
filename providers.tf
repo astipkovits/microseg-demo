@@ -11,6 +11,7 @@ provider "aviatrix" {
   username      = var.controller_user
   controller_ip = var.controller_ip
   password      = var.controller_pass
+  skip_version_validation = true
 }
 
 provider "aws" {
